@@ -1,4 +1,4 @@
-package com.arthurivanets.sharedpreferenceshandler.model;
+package com.arthurivanets.sharedpreferencesdemo.model;
 
 import com.arthurivanets.sharedpreferenceshandler.annotations.DefaultBoolean;
 import com.arthurivanets.sharedpreferenceshandler.annotations.DefaultInt;

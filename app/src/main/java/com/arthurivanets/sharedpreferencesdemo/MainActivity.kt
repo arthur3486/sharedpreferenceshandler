@@ -1,8 +1,8 @@
-package com.arthurivanets.sharedpreferenceshandler
+package com.arthurivanets.sharedpreferencesdemo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.arthurivanets.sharedpreferenceshandler.ui.main.MainFragment
+import com.arthurivanets.sharedpreferencesdemo.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 

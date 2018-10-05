@@ -1,4 +1,4 @@
-package com.arthurivanets.sharedpreferenceshandler.util
+package com.arthurivanets.sharedpreferencesdemo.util
 
 import android.content.Context
 import android.widget.Toast

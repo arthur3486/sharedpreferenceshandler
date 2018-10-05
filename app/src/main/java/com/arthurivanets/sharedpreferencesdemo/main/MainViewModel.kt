@@ -1,4 +1,4 @@
-package com.arthurivanets.sharedpreferenceshandler.ui.main
+package com.arthurivanets.sharedpreferencesdemo.main
 
 import androidx.lifecycle.ViewModel
 

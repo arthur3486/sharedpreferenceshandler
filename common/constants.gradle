@@ -1,0 +1,36 @@
+
+
+project.ext {
+    compileSdk = 28
+    targetSdk = 28
+    minSdk = 18
+
+    supportLibraryVersion = "1.0.0"
+    apacheCommonsVersion = "3.7"
+    robolectricVersion = "4.0-alpha-3-SNAPSHOT"
+    jUnitVersion = "4.12"
+    testRunnerVersion = "1.1.0-beta01"
+    espressoVersion = "3.1.0-alpha4"
+    coordinatorLayoutVersion = "2.0.0-alpha1"
+
+    releaseRepoName = "maven"
+    releaseUserOrg = "arthurlabs"
+    releaseGroupId = "com.arthurivanets.sharedpreferenceshandler"
+    releaseVersion = "1.0.0"
+    releaseVersionCode = 1
+    releaseWebsite = "https://github.com/arthur3486/sharedpreferenceshandler"
+    releaseLicense = ["Apache-2.0"]
+
+    licenseName = "The Apache Software License, Version 2.0"
+    licenseUrl = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+    allLicenses = ["Apache-2.0"]
+
+    developerId = "arthur3486"
+    developerName = "Arthur Ivanets"
+    developerEmail = "arthur.ivanets.l@gmail.com"
+
+    siteUrl = "https://github.com/arthur3486/sharedpreferenceshandler"
+    gitUrl = "https://github.com/arthur3486/sharedpreferenceshandler.git"
+    issueTracker = "https://github.com/arthur3486/sharedpreferenceshandler/issues"
+    releaseNotesFile = "CHANGELOG.md"
+}

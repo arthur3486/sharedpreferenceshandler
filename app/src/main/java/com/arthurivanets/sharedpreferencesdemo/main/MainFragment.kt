@@ -1,4 +1,4 @@
-package com.arthurivanets.sharedpreferenceshandler.ui.main
+package com.arthurivanets.sharedpreferencesdemo.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,19 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
-import com.arthurivanets.sharedpreferenceshandler.R
-import com.arthurivanets.sharedpreferenceshandler.R.id.infoTv
-import com.arthurivanets.sharedpreferenceshandler.R.id.retrieveButton
+import com.arthurivanets.sharedpreferencesdemo.R
+import com.arthurivanets.sharedpreferencesdemo.util.shortToast
 import com.arthurivanets.sharedpreferenceshandler.ktx.getSharedPreferencesManager
-import com.arthurivanets.sharedpreferenceshandler.model.AppSettings
-import com.arthurivanets.sharedpreferenceshandler.util.shortToast
 import kotlinx.android.synthetic.main.main_fragment.*
 
 class MainFragment : Fragment() {
 
 
     private lateinit var viewModel : MainViewModel
-    private var appSettings : AppSettings? = null
+    private var appSettings : com.arthurivanets.sharedpreferencesdemo.model.AppSettings? = null
 
 
 
@@ -41,7 +38,7 @@ class MainFragment : Fragment() {
     override fun onCreateView(inflater : LayoutInflater,
                               container : ViewGroup?,
                               savedInstanceState : Bundle?) : View {
-        appSettings = AppSettings().also {
+        appSettings = com.arthurivanets.sharedpreferencesdemo.model.AppSettings().also {
             it.mainId = 13
             it.openCount = 1
             it.homeMessage = "This is the Home message."
@@ -92,7 +89,7 @@ class MainFragment : Fragment() {
 
 
 
-    private fun showAppSettings(settings : AppSettings?) {
+    private fun showAppSettings(settings : com.arthurivanets.sharedpreferencesdemo.model.AppSettings?) {
         settings?.let {
             infoTv.text = it.toString()
         }
@@ -101,16 +98,16 @@ class MainFragment : Fragment() {
 
 
 
-    private fun getAppSettings() : AppSettings? {
+    private fun getAppSettings() : com.arthurivanets.sharedpreferencesdemo.model.AppSettings? {
         return context?.getSharedPreferencesManager(PREFERENCES_FILE_NAME)?.run {
-            get(AppSettings::class.java)
+            get(com.arthurivanets.sharedpreferencesdemo.model.AppSettings::class.java)
         }
     }
 
 
 
 
-    private fun saveAppSettings(settings : AppSettings) {
+    private fun saveAppSettings(settings : com.arthurivanets.sharedpreferencesdemo.model.AppSettings) {
         context?.getSharedPreferencesManager(PREFERENCES_FILE_NAME)?.run {
             putAndApply(settings)
         }
